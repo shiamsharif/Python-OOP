@@ -31,13 +31,18 @@ class Car:
         self.brand = brand
         self.model = model
 
+    
+    def Display_info(self):
+        print(f"Car Brand: {self.brand} \nCar model: {self.model}\n\n")
+
 
 car1 = Car()
 car1.brand = "Toyota"
-print(car1.brand)
+# car1.model = "Corola"
+car1.Display_info()
 
 car2 = Car("Tesla", "M3")
-print(car2)
+car2.Display_info()
 
 car3 = Car()
-print(car3)
+car3.Display_info()
